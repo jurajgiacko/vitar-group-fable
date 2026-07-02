@@ -1237,3 +1237,40 @@ body.rfq-open { overflow: hidden; }
 .c-1 { width: 42%; aspect-ratio: 3 / 4; left: 8%; top: 9%; transform: rotate(-6deg); }
 .c-2 { width: 40%; aspect-ratio: 3 / 4; right: 8%; top: 20%; transform: rotate(5deg); }
 .c-float { position: absolute; width: 34%; left: 29%; bottom: 5%; transform: rotate(-4deg); filter: drop-shadow(0 24px 36px rgba(16, 16, 21, 0.42)); }
+
+/* ---------- photo band ---------- */
+.photo-band {
+  position: relative;
+  border-radius: var(--radius-l);
+  overflow: clip;
+  aspect-ratio: 21 / 9;
+  will-change: transform;
+}
+.photo-band img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(185deg, rgba(11, 11, 16, 0) 55%, rgba(11, 11, 16, 0.55));
+  pointer-events: none;
+}
+.photo-band .visual-caption {
+  position: absolute;
+  left: 1.8rem;
+  bottom: 1.5rem;
+  right: 1.8rem;
+  z-index: 2;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2.4vw, 1.9rem);
+  margin: 0;
+  text-shadow: 0 2px 16px rgba(11, 11, 16, 0.4);
+}
+@media (max-width: 640px) { .photo-band { aspect-ratio: 4 / 3; } }

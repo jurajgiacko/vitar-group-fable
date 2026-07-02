@@ -1,64 +1,27 @@
 {
-  "vyroba-baleni-tub.jpg": {
-    "subject": "Výroba — balicí linka na tuby šumivých vitamínů (barevné tuby Maxi Vita)",
-    "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_270.jpg",
-    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyroba",
-    "dimensions": "640x426",
-    "size_kb": 107,
-    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
-  },
   "vyroba-plnici-linka-capri-sun.jpg": {
     "subject": "Výroba — plnicí linka nápojů Capri-Sun",
     "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_530.jpg",
     "found_on": "https://www.vitar.cz/kariera/oddeleni/vyroba",
     "dimensions": "640x426",
-    "size_kb": 110
+    "size_kb": 110,
+    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition. Replace with a real photoshoot before launch or get brand approval."
   },
   "vyroba-linka.jpg": {
     "subject": "Výroba — širší pohled na výrobní/plnicí linku s dózami",
     "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_026.jpg",
     "found_on": "https://www.vitar.cz/kariera/oddeleni/vyroba",
     "dimensions": "640x426",
-    "size_kb": 85
-  },
-  "vyroba-operatorka-linky.jpg": {
-    "subject": "Lidé při práci — operátorky výrobní linky (hygienický oděv, čepice, roušky)",
-    "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_100.jpg",
-    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyroba",
-    "dimensions": "640x426",
-    "size_kb": 73,
-    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
-  },
-  "laborator-titrace.jpg": {
-    "subject": "Laboratoř / kontrola kvality — titrace, detail rukou laborantky",
-    "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_442.jpg",
-    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyvoj-a-kvalita",
-    "dimensions": "1200x798",
-    "size_kb": 104,
-    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
-  },
-  "laborator-kontrola-kvality.jpg": {
-    "subject": "Laboratoř / kontrola kvality — laborantka při práci, analytické váhy, vzorky produktů",
-    "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_450.jpg",
-    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyvoj-a-kvalita",
-    "dimensions": "1200x798",
-    "size_kb": 132,
-    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
+    "size_kb": 85,
+    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition. Replace with a real photoshoot before launch or get brand approval."
   },
   "laborator-vybaveni.jpg": {
     "subject": "Laboratoř — analytické váhy, zkumavky se vzorky, laboratorní sklo",
     "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_453.jpg",
     "found_on": "https://www.vitar.cz/kariera/oddeleni/vyvoj-a-kvalita",
     "dimensions": "1200x798",
-    "size_kb": 108
-  },
-  "kancelar-tym.jpg": {
-    "subject": "Lidé při práci — kancelář vývojového/kvalitářského týmu",
-    "source_url": "https://www.vitar.cz/media/igallery/p/1/p1460770.jpg",
-    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyvoj-a-kvalita",
-    "dimensions": "1200x800",
-    "size_kb": 186,
-    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
+    "size_kb": 108,
+    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition. Replace with a real photoshoot before launch or get brand approval."
   },
   "budova-zlin.jpg": {
     "subject": "Sídlo firmy — administrativní budova VITAR Zlín s logem na střeše",
@@ -73,5 +36,57 @@
     "found_on": "https://www.vitar.cz/o-nas/o-spolecnosti",
     "dimensions": "1000x534",
     "size_kb": 174
+  },
+  "vyroba-baleni-tub-v2.jpg": {
+    "subject": "Výroba — balicí linka na tuby šumivých vitamínů (barevné tuby Maxi Vita)",
+    "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_270.jpg",
+    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyroba",
+    "dimensions": "640x426",
+    "size_kb": 107,
+    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
+  },
+  "kancelar-tym-v2.jpg": {
+    "subject": "Lidé při práci — kancelář vývojového/kvalitářského týmu",
+    "source_url": "https://www.vitar.cz/media/igallery/p/1/p1460770.jpg",
+    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyvoj-a-kvalita",
+    "dimensions": "1200x800",
+    "size_kb": 186,
+    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
+  },
+  "laborator-kontrola-kvality-v2.jpg": {
+    "subject": "Laboratoř / kontrola kvality — laborantka při práci, analytické váhy, vzorky produktů",
+    "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_450.jpg",
+    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyvoj-a-kvalita",
+    "dimensions": "1200x798",
+    "size_kb": 132,
+    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
+  },
+  "laborator-titrace-v2.jpg": {
+    "subject": "Laboratoř / kontrola kvality — titrace, detail rukou laborantky",
+    "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_442.jpg",
+    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyvoj-a-kvalita",
+    "dimensions": "1200x798",
+    "size_kb": 104,
+    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
+  },
+  "vyroba-operatorka-linky-v2.jpg": {
+    "subject": "Lidé při práci — operátorky výrobní linky (hygienický oděv, čepice, roušky)",
+    "source_url": "https://www.vitar.cz/media/igallery/v/i/vitarvyroba_13-v-2016_100.jpg",
+    "found_on": "https://www.vitar.cz/kariera/oddeleni/vyroba",
+    "dimensions": "640x426",
+    "size_kb": 73,
+    "note": "AI-modernized (Gemini 2.5 Flash Image) from the vitar.cz original — same scene/composition, updated interior/lighting. Replace with a real photoshoot before launch or get brand approval."
+  },
+  "sklad-expedice.jpg": {
+    "subject": "Sklad / expedice — moderní distribuční sklad",
+    "source_url": null,
+    "note": "Fully AI-generated (Gemini 2.5 Flash Image) — no real photo of the VITAR warehouse existed. Approve or replace before launch.",
+    "dimensions": "1800px"
+  },
+  "rodina-lifestyle.jpg": {
+    "subject": "Lifestyle — rodina na letní procházce (moravská krajina)",
+    "source_url": null,
+    "note": "Fully AI-generated (Gemini 2.5 Flash Image) lifestyle hero. Approve or replace before launch.",
+    "dimensions": "1800px"
   }
 }
