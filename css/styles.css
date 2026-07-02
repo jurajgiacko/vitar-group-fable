@@ -111,6 +111,7 @@ p:last-child { margin-bottom: 0; }
   margin: 0 0 1.4rem;
 }
 .eyebrow svg { width: 22px; height: 11px; flex: none; color: var(--green); }
+@media (max-width: 480px) { .eyebrow { font-size: 0.72rem; letter-spacing: 0.1em; } }
 
 .text-center { text-align: center; }
 .mt-2 { margin-top: 2rem; }
@@ -138,8 +139,8 @@ p:last-child { margin-bottom: 0; }
   min-height: var(--header-h);
 }
 
-.logo { display: inline-flex; align-items: center; }
-.logo img { height: 26px; width: auto; }
+.logo { display: inline-flex; align-items: center; flex: none; }
+.logo img { height: 26px; width: auto; max-width: none; }
 @media (max-width: 480px) { .logo img { height: 21px; } }
 
 .nav-links {
@@ -196,8 +197,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 @media (max-width: 920px) {
-  .nav-toggle { display: flex; }
-  .nav-cta { display: none; }
+  .nav-toggle { display: flex; flex: none; }
+  .nav .nav-cta { display: none; }
   .nav-links {
     position: fixed;
     inset: 0;
@@ -308,6 +309,7 @@ p:last-child { margin-bottom: 0; }
 
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
 
+@media (max-width: 760px), (max-height: 700px) { .hero-scroll { display: none !important; } }
 .hero-scroll {
   position: absolute;
   bottom: 2.2rem;
@@ -422,6 +424,9 @@ p:last-child { margin-bottom: 0; }
 
 /* ---------- role cards (stacked scroll) ---------- */
 .stack { display: grid; gap: clamp(1.25rem, 3vw, 2rem); }
+@media (max-width: 859px) {
+  .stack-card { position: static !important; min-height: 0; filter: none !important; transform: none !important; }
+}
 .stack-card {
   position: sticky;
   top: calc(var(--header-h) + 2rem);
@@ -1194,3 +1199,32 @@ body.rfq-open { overflow: hidden; }
 @media (max-width: 920px) { .lang-switch { margin-left: auto; } }
 
 .rfq [hidden] { display: none !important; }
+
+/* ---------- real visuals: photos + product collages ---------- */
+.visual-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.has-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(185deg, rgba(11, 11, 16, 0) 45%, rgba(11, 11, 16, 0.62));
+  pointer-events: none;
+}
+.split-visual .visual-caption, .stack-visual .visual-caption { z-index: 2; }
+.collage { position: absolute; inset: 0; }
+.c-item {
+  position: absolute;
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 22px 46px -14px rgba(16, 16, 21, 0.38);
+  padding: 4%;
+}
+.c-item img { width: 100%; height: 100%; object-fit: contain; }
+.c-1 { width: 42%; aspect-ratio: 3 / 4; left: 8%; top: 9%; transform: rotate(-6deg); }
+.c-2 { width: 40%; aspect-ratio: 3 / 4; right: 8%; top: 20%; transform: rotate(5deg); }
+.c-float { position: absolute; width: 34%; left: 29%; bottom: 5%; transform: rotate(-4deg); filter: drop-shadow(0 24px 36px rgba(16, 16, 21, 0.42)); }

@@ -219,8 +219,8 @@
     );
   });
 
-  /* ---------- stacked role cards ---------- */
-  var stackCards = qsa(".stack-card");
+  /* ---------- stacked role cards (desktop only) ---------- */
+  var stackCards = window.innerWidth > 860 ? qsa(".stack-card") : [];
   stackCards.forEach(function (card, i) {
     if (i === stackCards.length - 1) return;
     gsap.to(card, {
@@ -263,7 +263,7 @@
     gsap.fromTo(maskSvg,
       { scale: 1 },
       {
-        scale: 30,
+        scale: 14,
         ease: "power1.in",
         scrollTrigger: {
           trigger: maskStage,
