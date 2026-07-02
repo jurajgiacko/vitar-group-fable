@@ -258,7 +258,7 @@
 
   /* ---------- flower mask reveal ---------- */
   var maskStage = qs(".mask-stage");
-  var maskSvg = qs(".mask-over svg");
+  var maskSvg = qs(".mask-over .mask-scaler") || qs(".mask-over svg");
   if (maskStage && maskSvg) {
     gsap.fromTo(maskSvg,
       { scale: 1 },
