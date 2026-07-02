@@ -21,8 +21,7 @@
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="index.html" aria-label="VITAR Group — úvodní stránka">
-        <svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
-        <span class="logo-word">vitar<em> group</em></span>
+        <img src="assets/logo.svg" alt="vitar.group" width="254" height="63">
       </a>
       <nav aria-label="Hlavní navigace">
         <ul class="nav-links">
@@ -33,7 +32,7 @@
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
-      <a class="btn btn--primary nav-cta" href="vyroba.html#poptavka">Poptat výrobu</a>
+      <a class="btn nav-cta" href="vyroba.html#poptavka">Poptat výrobu</a>
       <button class="nav-toggle" aria-expanded="false" aria-label="Otevřít menu">
         <span></span><span></span><span></span>
       </button>
@@ -44,50 +43,34 @@
 
     <!-- HERO -->
     <section class="hero">
-      <svg class="hero-blob hero-blob--main" aria-hidden="true"><use href="assets/sprite.svg#blobA"/></svg>
-      <svg class="hero-blob hero-blob--green" aria-hidden="true"><use href="assets/sprite.svg#blobB"/></svg>
-      <svg class="hero-flower hero-flower--a" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
-      <svg class="hero-flower hero-flower--b" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
-      <div class="container">
-        <p class="eyebrow reveal"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Česká rodinná skupina · od roku 1990</p>
-        <h1 class="reveal" data-delay="1">Pomáháme lidem vést <span class="accent">zdravější život.</span></h1>
-        <p class="lead reveal" data-delay="2">VITAR Group spojuje vývoj, výrobu a značky vitamínů a doplňků stravy pod jednou střechou. Ze Zlína pro celou Evropu.</p>
-        <div class="hero-actions reveal" data-delay="3">
-          <a class="btn btn--primary" href="znacky.html">Naše značky <span class="arrow">→</span></a>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-flower hero-flower--a" aria-hidden="true"><svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></div>
+      <div class="hero-flower hero-flower--b" aria-hidden="true"><svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></div>
+      <div class="hero-flower hero-flower--c" aria-hidden="true"><svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></div>
+      <div class="container hero-inner">
+        <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Česká rodinná skupina · od roku 1990</p>
+        <h1 class="display-1" data-split>Pomáháme lidem vést <span class="accent">zdravější život.</span></h1>
+        <p class="lead">Vývoj, výroba a značky vitamínů a doplňků stravy pod jednou střechou. Ze Zlína pro celou Evropu.</p>
+        <div class="hero-actions">
+          <a class="btn" href="znacky.html">Naše značky <span class="arrow">→</span></a>
           <a class="btn btn--ghost" href="vyroba.html">Výroba pro partnery</a>
         </div>
       </div>
+      <p class="hero-scroll" aria-hidden="true">scrolluj</p>
     </section>
 
-    <!-- BRAND MARQUEE -->
-    <section class="section--tight" aria-label="Značky skupiny">
-      <div class="marquee">
-        <div class="marquee-track">
-          <span class="marquee-item">MaxiVita</span>
-          <span class="marquee-item">VITAR</span>
-          <span class="marquee-item">Enervit</span>
-          <span class="marquee-item">Royal Bay</span>
-          <span class="marquee-item">Energit</span>
-          <span class="marquee-item">Capri-Sonne</span>
-          <span class="marquee-item">Vyproštovák</span>
-          <span class="marquee-item">Revitalon</span>
-          <span class="marquee-item">MaxiVita</span>
-          <span class="marquee-item">VITAR</span>
-          <span class="marquee-item">Enervit</span>
-          <span class="marquee-item">Royal Bay</span>
-          <span class="marquee-item">Energit</span>
-          <span class="marquee-item">Capri-Sonne</span>
-          <span class="marquee-item">Vyproštovák</span>
-          <span class="marquee-item">Revitalon</span>
-        </div>
+    <!-- STATEMENT -->
+    <section class="statement">
+      <div class="container">
+        <p>VITAR Group je zastřešující značka skupiny, která přes 35 let vyvíjí a vyrábí doplňky stravy. Neprodáváme — <span class="accent">identifikujeme</span>, <span class="accent">spojujeme</span> a <span class="accent-green">budujeme důvěru</span>. Prodej patří našim značkám.</p>
       </div>
     </section>
 
-    <!-- STATS -->
+    <!-- STATS PANEL -->
     <section class="section--tight">
       <div class="container">
-        <div class="stats reveal">
-          <svg class="stats-blob" aria-hidden="true"><use href="assets/sprite.svg#blobB"/></svg>
+        <div class="panel panel--ink stats">
+          <svg class="panel-flower" style="width:46%;right:-12%;top:-30%;position:absolute" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
           <div class="stats-grid">
             <div class="stat">
               <span class="stat-value"><span data-count="35" data-suffix="+">35+</span></span>
@@ -115,90 +98,187 @@
       </div>
     </section>
 
-    <!-- THREE ROLES -->
+    <!-- THREE ROLES: stacked cards -->
     <section class="section">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Kdo jsme</p>
-          <h2>Jedna skupina, tři role</h2>
+          <h2 data-split>Jedna skupina, tři role</h2>
           <p class="lead">Značka VITAR Group zastřešuje všechno, co ve Zlíně děláme — od vlastních produktů přes zakázkovou výrobu až po lidi, kteří to celé tvoří.</p>
         </div>
-        <div class="card-grid">
-          <a class="card reveal" href="znacky.html">
-            <div class="card-icon card-icon--green"><svg aria-hidden="true"><use href="assets/sprite.svg#heart"/></svg></div>
-            <h3>Brand house</h3>
-            <p>Rodina značek pro každý den i vrcholný výkon — od vitamínů MaxiVita přes prémiové řady VITAR až po sportovní výživu.</p>
-            <span class="card-link">Prozkoumat značky <span class="arrow">→</span></span>
+        <div class="stack">
+          <article class="stack-card">
+            <div>
+              <span class="card-index">01 · Brand house</span>
+              <h3>Značky pro každý den i vrcholný výkon</h3>
+              <p>Rodina značek od vitamínů MaxiVita přes prémiové řady VITAR až po sportovní výživu. Každá má vlastní tvář, všechny spojuje jedna kvalita.</p>
+              <a class="card-link" href="znacky.html">Prozkoumat značky <span class="arrow">→</span></a>
+            </div>
+            <div class="stack-visual stack-visual--green">
+              <svg class="sv-flower" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
+            </div>
+          </article>
+          <article class="stack-card">
+            <div>
+              <span class="card-index">02 · Výrobce a partner</span>
+              <h3>Vyrábíme. I pod vaší značkou.</h3>
+              <p>Vlastní vývoj, výroba a laboratoř s kapacitou 27 milionů kusů ročně. Private label a zakázková výroba pro partnery v celé Evropě.</p>
+              <a class="card-link" href="vyroba.html">Výroba a vývoj <span class="arrow">→</span></a>
+            </div>
+            <div class="stack-visual stack-visual--indigo">
+              <svg class="sv-flower" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
+            </div>
+          </article>
+          <article class="stack-card">
+            <div>
+              <span class="card-index">03 · Zaměstnavatel</span>
+              <h3>Rodinná firma, evropské ambice</h3>
+              <p>~250 kolegyň a kolegů ve výrobě, laboratoři, vývoji, obchodu i digitálu. Ve Zlíně se známe jménem, ne číslem zaměstnance.</p>
+              <a class="card-link" href="kariera.html">Kariéra u nás <span class="arrow">→</span></a>
+            </div>
+            <div class="stack-visual stack-visual--amber">
+              <svg class="sv-flower" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND RAIL -->
+    <section class="rail-section section--tight">
+      <div class="container rail-head">
+        <div>
+          <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Naše značky</p>
+          <h2 data-split>Poznáte je z regálů</h2>
+        </div>
+        <a class="btn btn--ghost" href="znacky.html">Všechny značky</a>
+      </div>
+      <div class="container--wide">
+        <div class="rail-track">
+          <a class="rail-card" href="https://www.maxivita.cz" rel="noopener">
+            <div class="rail-media rail-media--mint"><img src="assets/brands/maxivita-logo.png" alt="MaxiVita" loading="lazy"></div>
+            <span class="brand-tag brand-tag--green">Pro každý den</span>
+            <span class="brand-name">MaxiVita</span>
+            <p>Vitamíny a doplňky stravy pro celou rodinu — v drogeriích po celém Česku.</p>
+            <span class="brand-ext">maxivita.cz →</span>
           </a>
-          <a class="card reveal" data-delay="1" href="vyroba.html">
-            <div class="card-icon"><svg aria-hidden="true"><use href="assets/sprite.svg#factory"/></svg></div>
-            <h3>Výrobce a partner</h3>
-            <p>Vlastní vývoj, výroba a laboratoř. Vyrábíme pod našimi značkami i jako zakázkový a private label partner pro firmy v Evropě.</p>
-            <span class="card-link">Výroba a vývoj <span class="arrow">→</span></span>
+          <a class="rail-card" href="https://www.ceske-vitaminy.cz" rel="noopener">
+            <div class="rail-media"><img src="assets/brands/maxivita-essentials-logo.png" alt="MaxiVita Essentials" loading="lazy"></div>
+            <span class="brand-tag">Prémiová řada</span>
+            <span class="brand-name">MaxiVita Essentials</span>
+            <p>To nejlepší z MaxiVity v prémiovém provedení.</p>
+            <span class="brand-ext">ceske-vitaminy.cz →</span>
           </a>
-          <a class="card reveal" data-delay="2" href="kariera.html">
-            <div class="card-icon card-icon--amber"><svg aria-hidden="true"><use href="assets/sprite.svg#people"/></svg></div>
-            <h3>Zaměstnavatel</h3>
-            <p>Rodinná firma se zázemím evropské skupiny. Výroba, laboratoř, vývoj, obchod i digitál — všechno pod jednou střechou ve Zlíně.</p>
-            <span class="card-link">Kariéra u nás <span class="arrow">→</span></span>
+          <a class="rail-card" href="https://www.vitar.cz" rel="noopener">
+            <div class="rail-media"><img src="assets/brands/vitar-product.png" alt="VITAR — Super Beta-karoten" loading="lazy"></div>
+            <span class="brand-tag">Prémiová řada</span>
+            <span class="brand-name">VITAR</span>
+            <p>Prémiové řady a novinky, které nesou jméno celé skupiny.</p>
+            <span class="brand-ext">vitar.cz →</span>
+          </a>
+          <div class="rail-card">
+            <div class="rail-media rail-media--peach"><img src="assets/brands/energit-logo.png" alt="Energit" loading="lazy"></div>
+            <span class="brand-tag brand-tag--amber">Energie</span>
+            <span class="brand-name">Energit</span>
+            <p>Rychlá energie do kapsy. Ikonické pastilky pro řidiče i studenty.</p>
+          </div>
+          <div class="rail-card">
+            <div class="rail-media rail-media--peach"><img src="assets/brands/capri-sonne-product.png" alt="Capri-Sun" loading="lazy"></div>
+            <span class="brand-tag brand-tag--amber">Nápoje</span>
+            <span class="brand-name">Capri-Sonne</span>
+            <p>Legendární dětský nápoj, který v licenci vyrábíme pro CZ a SK.</p>
+          </div>
+          <div class="rail-card">
+            <div class="rail-media rail-media--white"><img src="assets/brands/vyprostovak-product.jpg" alt="Vyproštovák Forte" loading="lazy"></div>
+            <span class="brand-tag brand-tag--coral">Klasika</span>
+            <span class="brand-name">Vyproštovák</span>
+            <p>Česká klasika s nadhledem, kterou zná několik generací.</p>
+          </div>
+          <div class="rail-card">
+            <div class="rail-media rail-media--rose"><img src="assets/brands/revitalon-logo.png" alt="Revitalon" loading="lazy"></div>
+            <span class="brand-tag brand-tag--coral">Péče</span>
+            <span class="brand-name">Revitalon</span>
+            <p>Výživa pro vlasy a krásu — péče zevnitř.</p>
+          </div>
+          <a class="rail-card" href="znacky.html">
+            <div class="rail-media"><svg style="width:40%;color:var(--indigo)" viewBox="0 0 130 105" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg></div>
+            <span class="brand-name">+ další značky</span>
+            <p>Sportovní svět, veterinární řada a další členové rodiny.</p>
+            <span class="brand-ext">Celé portfolio →</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- QUALITY SPLIT -->
-    <section class="section section--lilac">
-      <div class="container split">
-        <div class="reveal">
-          <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Kvalita především</p>
-          <h2>Od receptury po každou šarži</h2>
-          <p class="lead">Kvalitu nedelegujeme. Vyvíjíme, testujeme a kontrolujeme ve vlastní laboratoři — a za každým výrobkem si stojíme.</p>
-          <ul class="checklist">
-            <li><svg aria-hidden="true"><use href="assets/sprite.svg#check"/></svg><span><strong>Vlastní laboratoř a vývoj</strong> — receptury vznikají u nás, ne na papíře dodavatele.</span></li>
-            <li><svg aria-hidden="true"><use href="assets/sprite.svg#check"/></svg><span><strong>Dohledatelnost šarží</strong> — každá šarže má svůj protokol a certifikát analýzy (CoA).</span></li>
-            <li><svg aria-hidden="true"><use href="assets/sprite.svg#check"/></svg><span><strong>Certifikovaná výroba</strong> — systém řízení kvality podle mezinárodních standardů.</span></li>
-            <li><svg aria-hidden="true"><use href="assets/sprite.svg#check"/></svg><span><strong>35 let praxe</strong> — zkušenosti z milionů vyrobených balení ročně.</span></li>
-          </ul>
+    <!-- FLOWER MASK REVEAL -->
+    <section class="mask-section" aria-label="Kvalita">
+      <div class="mask-stage">
+        <div class="mask-under">
+          <div class="mask-under-inner">
+            <p class="eyebrow" style="color:var(--green)"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Kvalita především</p>
+            <h2>Za každou šarží si stojíme</h2>
+            <p>Vlastní laboratoř, dohledatelnost každé šarže a certifikát analýzy ke každé z nich. Kvalitu nedelegujeme — vyrábíme ji.</p>
+          </div>
         </div>
-        <div class="split-visual split-visual--indigo reveal" data-delay="1" role="img" aria-label="Symbol pětilístku VITAR Group">
-          <svg class="blob-fill" aria-hidden="true"><use href="assets/sprite.svg#blobA"/></svg>
-          <svg class="visual-flower" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
-          <p class="visual-caption">Pětilístek — symbol, který nese kvalitu už od roku 1990.</p>
+        <div class="mask-over" aria-hidden="true">
+          <svg viewBox="-1000 -1000 2130 2105" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"><path fill-rule="evenodd" d="M-1000 -1000H1130V1105H-1000Z M8.43 40.33C15.44 29.75 30.58 23.68 40.82 26.93C44.36 28.05 46.83 30.11 48.16 32.74C48.89 34.21 49.95 35.46 51.29 36.48C53.09 37.84 57.03 35.79 57.15 33.45C57.23 31.78 56.97 30.18 56.44 28.70C55.25 25.32 55.73 21.12 58.28 16.63C62.83 8.58 73.24 2.10 82.99 1.20C96.00 0.00 103.05 8.38 98.60 18.87C97.06 22.50 94.37 25.87 91.02 28.67C89.16 30.23 87.55 31.91 86.23 33.67C84.45 36.04 86.88 37.90 89.81 36.47C91.91 35.45 93.93 34.18 95.81 32.78C100.08 29.60 105.36 27.23 110.87 26.37C120.81 24.82 128.54 29.07 129.32 36.45C130.34 46.28 119.57 57.51 106.57 60.76C102.08 61.88 97.96 61.88 94.57 60.99C92.72 60.49 90.70 60.28 88.58 60.34C85.64 60.43 83.10 63.63 84.81 65.11C86.02 66.15 87.53 66.98 89.21 67.59C93.06 69.00 95.82 71.74 96.71 75.70C98.27 82.78 92.67 91.88 83.38 97.35C71.00 104.62 57.30 103.20 53.71 94.70C52.49 91.78 52.63 88.42 53.88 85.05C54.58 83.18 54.91 81.36 54.90 79.65C54.88 77.34 50.95 77.46 49.06 79.79C47.71 81.45 46.63 83.23 45.80 85.00C43.87 89.08 40.33 93.13 35.34 96.44C26.40 102.38 15.19 103.75 8.68 99.74C0.00 94.41 2.32 82.29 13.09 73.81C16.81 70.86 21.03 68.78 25.19 67.60C27.51 66.94 29.77 66.04 31.92 64.91C34.82 63.39 34.82 60.25 31.97 60.24C29.93 60.22 27.75 60.50 25.55 60.98C20.51 62.07 15.56 61.85 11.61 59.94C4.50 56.52 3.17 48.27 8.44 40.34L8.43 40.33Z"/></svg>
         </div>
       </div>
     </section>
 
-    <!-- INTEGRATION SPLIT -->
+    <!-- QUALITY DETAIL -->
     <section class="section">
-      <div class="container split split--rev">
-        <div class="reveal">
-          <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Od vývoje po expedici</p>
-          <h2>Celý řetězec pod jednou střechou</h2>
-          <p class="lead">Vývoj receptur, výroba, balení, kvalita i logistika. Díky vlastnímu zázemí umíme jít od nápadu k hotovému produktu rychle — pro naše značky i pro partnery.</p>
+      <div class="container split">
+        <div>
+          <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Od receptury po expedici</p>
+          <h2 data-split>Celý řetězec pod jednou střechou</h2>
+          <ul class="checklist">
+            <li><svg aria-hidden="true"><use href="assets/sprite.svg#check"/></svg><span><strong>Vlastní vývoj a laboratoř</strong> — receptury vznikají u nás, suroviny i výrobky testujeme sami.</span></li>
+            <li><svg aria-hidden="true"><use href="assets/sprite.svg#check"/></svg><span><strong>Certifikát analýzy (CoA)</strong> — ke každé vyrobené šarži, s plnou dohledatelností.</span></li>
+            <li><svg aria-hidden="true"><use href="assets/sprite.svg#check"/></svg><span><strong>Certifikovaná výroba</strong> — systém řízení kvality podle mezinárodních standardů.</span></li>
+            <li><svg aria-hidden="true"><use href="assets/sprite.svg#check"/></svg><span><strong>Od nápadu k regálu</strong> — vývoj, výroba, balení i logistika z jednoho místa.</span></li>
+          </ul>
           <div class="hero-actions mt-2">
-            <a class="btn btn--primary" href="vyroba.html">Jak vyrábíme <span class="arrow">→</span></a>
+            <a class="btn" href="vyroba.html">Jak vyrábíme <span class="arrow">→</span></a>
             <a class="btn btn--ghost" href="o-nas.html">Příběh skupiny</a>
           </div>
         </div>
-        <div class="split-visual split-visual--green reveal" data-delay="1" role="img" aria-label="Ilustrace výroby VITAR Group">
-          <svg class="blob-fill" aria-hidden="true"><use href="assets/sprite.svg#blobB"/></svg>
-          <svg class="visual-flower" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
+        <div class="split-visual split-visual--green" data-parallax="0.08" role="img" aria-label="Výroba VITAR Group">
+          <svg class="visual-flower" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
           <p class="visual-caption">Až 27 milionů kusů ročně z jednoho místa.</p>
         </div>
       </div>
     </section>
 
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">MaxiVita <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">VITAR <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">Energit <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">Capri-Sonne <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">Vyproštovák <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">Revitalon <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">MaxiVita <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">VITAR <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">Energit <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">Capri-Sonne <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">Vyproštovák <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+        <span class="marquee-item">Revitalon <svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></span>
+      </div>
+    </div>
+
     <!-- CTA -->
     <section class="section--tight">
       <div class="container">
-        <div class="cta-band reveal">
-          <svg class="cta-blob" aria-hidden="true"><use href="assets/sprite.svg#blobA"/></svg>
-          <svg class="cta-flower" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
-          <h2>Hledáte výrobního partnera pro svou značku?</h2>
+        <div class="cta-band">
+          <svg class="cta-flower" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
+          <svg class="cta-flower-2" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
+          <h2 data-split>Hledáte výrobního partnera pro svou značku?</h2>
           <p>Od receptury po hotové balení. Napište nám, co chcete vyrábět — ozveme se s návrhem řešení.</p>
           <div class="cta-actions">
             <a class="btn btn--green" href="vyroba.html#poptavka">Poptat výrobu <span class="arrow">→</span></a>
-            <a class="btn btn--light" href="kontakt.html">Kontakty</a>
+            <a class="btn btn--ghost on-dark" href="kontakt.html">Kontakty</a>
           </div>
         </div>
       </div>
@@ -207,14 +287,12 @@
   </main>
 
   <footer class="site-footer">
-    <svg class="footer-flower" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
     <div class="container">
+      <a class="footer-wordmark" href="index.html" aria-label="vitar.group">
+        <img src="assets/logo-white.svg" alt="" width="1015" height="252" loading="lazy">
+      </a>
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="logo" href="index.html" aria-label="VITAR Group">
-            <svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
-            <span class="logo-word">vitar<em> group</em></span>
-          </a>
           <p>Pomáháme lidem vést zdravější život. Česká rodinná skupina, od roku 1990.</p>
           <a class="footer-domain" href="index.html"><span class="www">www.</span>vitar.group</a>
         </div>
@@ -234,8 +312,7 @@
             <li><a href="https://www.vitar.cz" rel="noopener">vitar.cz</a></li>
             <li><a href="https://www.nasevitaminy.cz" rel="noopener">nasevitaminy.cz</a></li>
             <li><a href="https://www.maxivita.cz" rel="noopener">maxivita.cz</a></li>
-            <li><a href="https://www.enervit.cz" rel="noopener">enervit.cz</a></li>
-            <li><a href="https://www.royalbay.cz" rel="noopener">royalbay.cz</a></li>
+            <li><a href="https://www.ceske-vitaminy.cz" rel="noopener">ceske-vitaminy.cz</a></li>
           </ul>
         </div>
         <div>
@@ -255,6 +332,9 @@
     </div>
   </footer>
 
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

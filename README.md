@@ -2,7 +2,13 @@
 
 Statický korporátní web **VITAR Group** (vitar.group / vitar-group.cz). „Statický svět" dle cílové architektury skupiny: prezentuje výrobce, brand house a zaměstnavatele — **neprodává** (žádný košík, žádný fulfillment; B2C prodej žije na e-shopech značek).
 
-**Vizuál:** Bloomfield Brand Studio rebrand, **varianta 1B / v2** — periwinkle indigo + zelený pětilístek, zaoblená typografie, organické blob tvary.
+**Vizuál:** Bloomfield Brand Studio rebrand, **varianta 1B / v2** — periwinkle indigo + zelený pětilístek, zaoblená typografie. **Logo a pětilístek jsou skutečné vektory extrahované z brand decku** (`assets/logo.svg`, `assets/flower.svg`), ne aproximace.
+
+**Motion:** GSAP 3 + ScrollTrigger + Lenis (vendorováno v `js/vendor/`, žádný build step). Pinned hero se split-text revealem, scrub statement, stacked role cards, pinned horizontální brand rail, flower-mask reveal, scroll-reactive marquee, magnetic buttons, hide-on-scroll header. Vše s `prefers-reduced-motion` fallbackem.
+
+**Brand assety:** `assets/brands/` obsahuje reálná loga a packshoty značek stažené z vitar.cz a nasevitaminy.cz (viz `assets/brands/manifest.json` se zdrojovými URL). Enervit a Royal Bay záměrně vynechány.
+
+**Konkurenční prehľad:** `docs/KONKURENCNY-PREHLAD.md` — 10 benchmark profilů (Lonza, Catalent, Sirio, Queisser/Doppelherz, dsm-firmenich, Haleon, Kofola, Prazdroj, ŠKODA kariéra, Gelita), syntéza vzorů a motion playbook.
 
 ## Struktura
 
@@ -15,8 +21,12 @@ Statický korporátní web **VITAR Group** (vitar.group / vitar-group.cz). „St
 | `kariera.html` | Employer branding — týmy, proč k nám, CTA na pozice |
 | `kontakt.html` | Kontakty a rozcestník |
 | `css/styles.css` | Design systém (tokeny, komponenty) |
-| `js/main.js` | Nav, scroll reveal, čítače — bez závislostí |
-| `assets/sprite.svg` | SVG sprite: pětilístek, blobs, ikony |
+| `js/main.js` | Motion engine (GSAP ScrollTrigger + Lenis) |
+| `js/vendor/` | gsap.min.js, ScrollTrigger.min.js, lenis.min.js |
+| `assets/logo.svg` / `logo-white.svg` | Skutečný logotyp z decku (vektor) |
+| `assets/brands/` | Reálná loga + packshoty značek (manifest.json) |
+| `assets/sprite.svg` | SVG sprite: pětilístek (real), ikony |
+| `docs/KONKURENCNY-PREHLAD.md` | Konkurenční benchmark + motion playbook |
 | `assets/og.png` | Social share obrázek 1200×630 |
 
 Žádný build step — soubory se servují tak, jak jsou. Lokálně: `python3 -m http.server 8000`.
@@ -34,7 +44,7 @@ Statický korporátní web **VITAR Group** (vitar.group / vitar-group.cz). „St
 
 **Typografie:** `Baloo 2` (display — webová náhrada za RF Atlantic z brand decku; RF Atlantic je placený font od Renegade Fonts, po nákupu licence stačí vyměnit font-family) + `Inter` (text). Pozn.: Fredoka byla zavržena — chybí jí české glyfy (ě, č, ř, ů…).
 
-**Pětilístek:** generovaný SVG (union 5 elips) — aproximace brandového symbolu. Po dodání finálních křivek od Bloomfieldu nahradit v `assets/sprite.svg` (symbol `#flower`) a `assets/favicon.svg`.
+**Pětilístek + logotyp:** extrahované vektorové křivky přímo z PDF brand decku (strana 36) — jde o skutečné tvary od Bloomfieldu.
 
 ## Zdroje obsahu
 

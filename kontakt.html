@@ -21,8 +21,7 @@
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="index.html" aria-label="VITAR Group — úvodní stránka">
-        <svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
-        <span class="logo-word">vitar<em> group</em></span>
+        <img src="assets/logo.svg" alt="vitar.group" width="254" height="63">
       </a>
       <nav aria-label="Hlavní navigace">
         <ul class="nav-links">
@@ -33,7 +32,7 @@
           <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
         </ul>
       </nav>
-      <a class="btn btn--primary nav-cta" href="vyroba.html#poptavka">Poptat výrobu</a>
+      <a class="btn nav-cta" href="vyroba.html#poptavka">Poptat výrobu</a>
       <button class="nav-toggle" aria-expanded="false" aria-label="Otevřít menu">
         <span></span><span></span><span></span>
       </button>
@@ -43,12 +42,12 @@
   <main id="main">
 
     <section class="page-hero">
-      <svg class="hero-blob hero-blob--main" aria-hidden="true"><use href="assets/sprite.svg#blobA"/></svg>
-      <svg class="hero-flower hero-flower--a" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-flower hero-flower--a" aria-hidden="true"><svg viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg></div>
       <div class="container">
-        <p class="eyebrow reveal"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Kontakt</p>
-        <h1 class="reveal" data-delay="1">Ozvěte se nám. <span class="accent">Rádi vás poznáme.</span></h1>
-        <p class="lead reveal" data-delay="2">Ať už jste obchodní partner, novinář, uchazeč o práci, nebo zákazník některé z našich značek — tady jste správně.</p>
+        <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Kontakt</p>
+        <h1 data-split>Ozvěte se nám. <span class="accent">Rádi vás poznáme.</span></h1>
+        <p class="lead">Ať už jste obchodní partner, novinář, uchazeč o práci, nebo zákazník některé z našich značek — tady jste správně.</p>
       </div>
     </section>
 
@@ -93,8 +92,8 @@
     <section class="section">
       <div class="container">
         <div class="cta-band reveal">
-          <svg class="cta-blob" aria-hidden="true"><use href="assets/sprite.svg#blobA"/></svg>
-          <svg class="cta-flower" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
+          <svg class="cta-flower" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
+          <svg class="cta-flower-2" aria-hidden="true" viewBox="0 0 130 105"><use href="assets/sprite.svg#flower"/></svg>
           <h2>Přijeďte se podívat, kde vitamíny vznikají</h2>
           <p>Sídlíme ve Zlíně — městě, které umí vyrábět. Domluvte si s námi schůzku.</p>
           <div class="cta-actions">
@@ -107,14 +106,12 @@
   </main>
 
   <footer class="site-footer">
-    <svg class="footer-flower" aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
     <div class="container">
+      <a class="footer-wordmark" href="index.html" aria-label="vitar.group">
+        <img src="assets/logo-white.svg" alt="" width="1015" height="252" loading="lazy">
+      </a>
       <div class="footer-grid">
         <div class="footer-brand">
-          <a class="logo" href="index.html" aria-label="VITAR Group">
-            <svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>
-            <span class="logo-word">vitar<em> group</em></span>
-          </a>
           <p>Pomáháme lidem vést zdravější život. Česká rodinná skupina, od roku 1990.</p>
           <a class="footer-domain" href="index.html"><span class="www">www.</span>vitar.group</a>
         </div>
@@ -134,8 +131,7 @@
             <li><a href="https://www.vitar.cz" rel="noopener">vitar.cz</a></li>
             <li><a href="https://www.nasevitaminy.cz" rel="noopener">nasevitaminy.cz</a></li>
             <li><a href="https://www.maxivita.cz" rel="noopener">maxivita.cz</a></li>
-            <li><a href="https://www.enervit.cz" rel="noopener">enervit.cz</a></li>
-            <li><a href="https://www.royalbay.cz" rel="noopener">royalbay.cz</a></li>
+            <li><a href="https://www.ceske-vitaminy.cz" rel="noopener">ceske-vitaminy.cz</a></li>
           </ul>
         </div>
         <div>
@@ -155,6 +151,9 @@
     </div>
   </footer>
 
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

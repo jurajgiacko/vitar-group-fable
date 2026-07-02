@@ -1,0 +1,160 @@
+{
+  "generated": "2026-07-02",
+  "note": "Real brand visuals scraped from live VITAR sites (vitar.cz, nasevitaminy.cz) for internal use on the VITAR Group corporate website. Enervit and Royal Bay intentionally excluded. 'Bene' brand not found on either live site.",
+  "assets": {
+    "maxivita-logo.png": {
+      "brand": "MaxiVita",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/MXVT_Vase_Zdravi_gradient_01.png",
+      "approx_dimensions": "205x211",
+      "has_transparency": true
+    },
+    "maxivita-essentials-logo.png": {
+      "brand": "MaxiVita Essentials",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/LOGO_ESSENTIALS_RGB_2.png",
+      "approx_dimensions": "1182x520",
+      "has_transparency": true
+    },
+    "vitar-logo.png": {
+      "brand": "VITAR",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/vitar_logo_01.png",
+      "approx_dimensions": "205x211",
+      "has_transparency": true
+    },
+    "energit-logo.png": {
+      "brand": "Energit",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/Energit_logo_pantone_476.png",
+      "approx_dimensions": "959x142",
+      "has_transparency": true
+    },
+    "capri-sonne-logo.png": {
+      "brand": "Capri-Sonne (Capri-Sun)",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/Capri-Sun_logo.png",
+      "approx_dimensions": "180x58",
+      "has_transparency": true
+    },
+    "vyprostovak-logo.png": {
+      "brand": "Vyproštovák",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/Vyprostovak_logo_web_135x65px.png",
+      "approx_dimensions": "135x65",
+      "has_transparency": true
+    },
+    "revitalon-logo.png": {
+      "brand": "Revitalon",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/revitalon_logo_1.png",
+      "approx_dimensions": "717x136",
+      "has_transparency": true
+    },
+    "revital-logo.png": {
+      "brand": "Revital",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/rev_1_1.png",
+      "approx_dimensions": "135x65",
+      "has_transparency": true
+    },
+    "irbis-logo.png": {
+      "brand": "Irbis",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/IRBIS_LOGO.png",
+      "approx_dimensions": "1181x591",
+      "has_transparency": false
+    },
+    "predator-logo.png": {
+      "brand": "Predator",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/predator.png",
+      "approx_dimensions": "1772x483",
+      "has_transparency": true
+    },
+    "emve-logo.png": {
+      "brand": "eMVe",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/wysiwyg/loga_znacky/emve.png",
+      "approx_dimensions": "125x100",
+      "has_transparency": true
+    },
+    "ovoce-logo.png": {
+      "brand": "OvoCe",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/wysiwyg/loga-znacky/Ovoce_logo_cmyk.png",
+      "approx_dimensions": "125x72",
+      "has_transparency": true
+    },
+    "vitar-veterinae-logo.jpg": {
+      "brand": "VITAR Veterinae",
+      "type": "logo",
+      "source_url": "https://www.vitar.cz/media/catalog/category/VITAR-Veterinae-logo-CZ-BARVA.jpg",
+      "approx_dimensions": "1200x524",
+      "has_transparency": false
+    },
+    "maxivita-product.jpg": {
+      "brand": "MaxiVita",
+      "type": "product",
+      "source_url": "https://www.vitar.cz/media/catalog/product/3/d/3d_mxvt_exclusive_vitaminc_rakytn_k_20tbl.eff_lr_1000px_web.jpg",
+      "approx_dimensions": "228x1000",
+      "has_transparency": false
+    },
+    "maxivita-essentials-product.jpg": {
+      "brand": "MaxiVita Essentials",
+      "type": "product",
+      "source_url": "https://img.nasevitaminy.cz/images/3D_Maxi_Vita_Essentials_Ranni_energie_volba_spotrebitelu_WEB_fast_e00c12.jpg",
+      "approx_dimensions": "386x600",
+      "has_transparency": false
+    },
+    "vitar-product.png": {
+      "brand": "VITAR",
+      "type": "product",
+      "source_url": "https://www.vitar.cz/media/catalog/product/3/d/3d_vitar_super_beta-karoten_se_sedmikr_skou_60tbl_600px.png",
+      "approx_dimensions": "391x599",
+      "has_transparency": true
+    },
+    "energit-product.jpg": {
+      "brand": "Energit",
+      "type": "product",
+      "source_url": "https://www.vitar.cz/media/catalog/product/4/2/42100601_energit_multivitamin_pomeranc_web_1.jpg",
+      "approx_dimensions": "1395x1000",
+      "has_transparency": false
+    },
+    "capri-sonne-product.png": {
+      "brand": "Capri-Sonne (Capri-Sun)",
+      "type": "product",
+      "source_url": "https://img.nasevitaminy.cz/images/TP_330ml_Multivitamin_3D_Phoenix_Packshot_TetheredCap_mitIcon.png",
+      "approx_dimensions": "625x1000",
+      "has_transparency": true
+    },
+    "vyprostovak-product.jpg": {
+      "brand": "Vyproštovák",
+      "type": "product",
+      "source_url": "https://www.vitar.cz/media/catalog/product/v/y/vyprostovak_forte_sacek.jpg",
+      "approx_dimensions": "623x999",
+      "has_transparency": false
+    },
+    "revitalon-product.jpg": {
+      "brand": "Revitalon",
+      "type": "product",
+      "source_url": "https://img.nasevitaminy.cz/images/3D_Revitalon_Forte_9030_kapsli_WEB_fast_ca9682.jpg",
+      "approx_dimensions": "506x600",
+      "has_transparency": false
+    },
+    "irbis-product.png": {
+      "brand": "Irbis",
+      "type": "product",
+      "source_url": "https://www.vitar.cz/media/catalog/product/3/d/3d_irbis_aspartam_big_sweet_10x_sl_sypke_sladidlo_200g_600px.png",
+      "approx_dimensions": "446x600",
+      "has_transparency": true
+    },
+    "predator-product.jpg": {
+      "brand": "Predator",
+      "type": "product",
+      "source_url": "https://www.vitar.cz/media/catalog/product/3/d/3d_repelent_predator_forte_150ml_pharma_hr-nova-flaska-web.jpg",
+      "approx_dimensions": "532x2025",
+      "has_transparency": false
+    }
+  }
+}
