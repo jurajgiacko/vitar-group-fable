@@ -2,7 +2,7 @@
 
 Statický korporátní web **VITAR Group** (vitar.group / vitar-group.cz). „Statický svět" dle cílové architektury skupiny: prezentuje výrobce, brand house a zaměstnavatele — **neprodává** (žádný košík, žádný fulfillment; B2C prodej žije na e-shopech značek).
 
-**Vizuál:** Bloomfield Brand Studio rebrand, **varianta 1B / v2** — periwinkle indigo + zelený pětilístek, zaoblená typografie. **Logo a pětilístek jsou skutečné vektory extrahované z brand decku** (`assets/logo.svg`, `assets/flower.svg`), ne aproximace.
+**Vizuál:** Bloomfield Brand Studio rebrand, **varianta 1A / v1 (korporátní)** — dle rozhodnutí týmu. Elektrická modrá `#3B2CFF` + zelený pětilístek `#64DD6C`, černé panely s outline vzorem pětilístku, ostřejší typografie. **Logo lockupy i pětilístek jsou skutečné vektory extrahované z brand decku** (`assets/logo.svg` horizontální, `assets/logo-stacked.svg`, `assets/flower.svg`).
 
 **Motion:** GSAP 3 + ScrollTrigger + Lenis (vendorováno v `js/vendor/`, žádný build step). Pinned hero se split-text revealem, scrub statement, stacked role cards, pinned horizontální brand rail, flower-mask reveal, scroll-reactive marquee, magnetic buttons, hide-on-scroll header. Vše s `prefers-reduced-motion` fallbackem.
 
@@ -31,20 +31,19 @@ Statický korporátní web **VITAR Group** (vitar.group / vitar-group.cz). „St
 
 Žádný build step — soubory se servují tak, jak jsou. Lokálně: `python3 -m http.server 8000`.
 
-## Brand tokeny (varianta 1B)
+## Brand tokeny (varianta 1A / v1)
 
 | Token | Hex | Použití |
 |---|---|---|
-| `--indigo` | `#5762D5` | Primární — logo, CTA, plochy |
-| `--green` | `#97DF73` | Pětilístek, akcenty, checkmarky |
-| `--coral` | `#F25F5C` | Doplňkový akcent |
-| `--amber` | `#F4B266` | Doplňkový akcent |
-| `--ink` | `#1D2050` | Text |
-| `--paper` | `#FAFAF6` | Pozadí |
+| `--indigo` | `#3B2CFF` | Primární elektrická modrá — logo, CTA, akcenty |
+| `--green` | `#64DD6C` | Pětilístek, čísla na tmavé, checkmarky |
+| `--indigo-dark` | `#0B0B10` | Černé panely (stats, footer) s outline vzorem |
+| `--ink` | `#101015` | Text |
+| `--paper` | `#FBFBFB` | Pozadí |
 
-**Typografie:** `Baloo 2` (display — webová náhrada za RF Atlantic z brand decku; RF Atlantic je placený font od Renegade Fonts, po nákupu licence stačí vyměnit font-family) + `Inter` (text). Pozn.: Fredoka byla zavržena — chybí jí české glyfy (ě, č, ř, ů…).
+**Typografie:** `Space Grotesk` (display — webová náhrada za font Youth od Jana Nováka z decku; Youth je placený, po nákupu licence stačí vyměnit font-family; Space Grotesk má plnou češtinu) + `Inter` (text).
 
-**Pětilístek + logotyp:** extrahované vektorové křivky přímo z PDF brand decku (strana 36) — jde o skutečné tvary od Bloomfieldu.
+**Pětilístek + logotypy:** extrahované vektorové křivky přímo z PDF brand decku (strany 13 a 19) — skutečné tvary od Bloomfieldu včetně ®. Outline vzor pětilístku na černých plochách odpovídá stranám 28–29 decku.
 
 ## Zdroje obsahu
 
@@ -59,7 +58,6 @@ Obsah vychází z projektové dokumentace `vitar-eshop-digitalizace` (KNOWLEDGE_
 - [ ] **Certifikace** — na webu záměrně obecně („systém řízení kvality, HACCP, správná výrobní praxe"). Konkrétní certifikáty (ISO/IFS…) doplnit po dodání skenů/čísel.
 - [ ] **Milníky na o-nas.html** — dekády jsou přibližné, přesná data doplnit z firemní kroniky.
 - [ ] **Formy výroby** (gummies, stick packy…) — potvrdit skutečné technologické portfolio.
-- [ ] **Timeline pozn.:** dle zápisu z 9. 6. 2026 padla preference „levé (serióznější)" varianty pro Group — tento web staví na **v2/1B** dle aktuálního zadání (2. 7. 2026). Pokud se rozhodnutí vrátí k v1, jde o výměnu tokenů v `styles.css`.
 - [ ] **GDPR/cookies** — web nemá žádné trackery ani cookies; při nasazení analytiky doplnit lištu + privacy stránku.
 - [ ] **EN verze** (vitar.eu → vitar.group/en) — připraveno strukturou, obsah zatím jen CZ.
 
