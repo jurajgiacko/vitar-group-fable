@@ -1,38 +1,38 @@
 /* ==========================================================================
-   VITAR Group — corporate site v2
-   Visual: Bloomfield rebrand 1B/v2 · real logo vectors from brand deck
+   VITAR Group — corporate site v3
+   Visual: Bloomfield rebrand 1A/v1 (corporate) · real logo vectors from brand deck
    Motion: GSAP ScrollTrigger + Lenis (js/main.js)
-   Palette: indigo #5762D5 · green #97DF73 · coral #F25F5C · amber #F4B266
+   Palette: electric blue #3B2CFF · green #64DD6C · black · paper #FBFBFB
    ========================================================================== */
 
 :root {
-  --indigo: #5762d5;
-  --indigo-deep: #4048b8;
-  --indigo-dark: #23264f;
-  --ink: #17193c;
-  --paper: #f7f6f2;
+  --indigo: #3b2cff;
+  --indigo-deep: #2a1ed9;
+  --indigo-dark: #0b0b10;
+  --ink: #101015;
+  --paper: #fbfbfb;
   --white: #ffffff;
-  --green: #97df73;
-  --green-deep: #5da938;
-  --coral: #f25f5c;
-  --amber: #f4b266;
-  --lilac: #e9ebf9;
-  --mint: #ecf8e3;
-  --muted: #5f6284;
-  --line: rgba(23, 25, 60, 0.08);
+  --green: #64dd6c;
+  --green-deep: #23a24c;
+  --coral: #2a1ed9;
+  --amber: #9da3b5;
+  --lilac: #eceaff;
+  --mint: #e8f9eb;
+  --muted: #55555f;
+  --line: rgba(16, 16, 21, 0.09);
 
-  --font-display: "Baloo 2", "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
   --font-text: "Inter", system-ui, -apple-system, sans-serif;
 
-  --radius-s: 14px;
-  --radius: 24px;
-  --radius-l: 40px;
+  --radius-s: 10px;
+  --radius: 18px;
+  --radius-l: 28px;
 
   --container: 1240px;
   --gutter: clamp(1.25rem, 4vw, 3rem);
 
-  --shadow-card: 0 1px 2px rgba(23, 25, 60, 0.04), 0 24px 60px -24px rgba(23, 25, 60, 0.16);
-  --shadow-pop: 0 4px 12px rgba(23, 25, 60, 0.06), 0 40px 90px -30px rgba(23, 25, 60, 0.3);
+  --shadow-card: 0 1px 2px rgba(16, 16, 21, 0.04), 0 18px 44px -22px rgba(16, 16, 21, 0.14);
+  --shadow-pop: 0 4px 12px rgba(16, 16, 21, 0.05), 0 32px 70px -28px rgba(16, 16, 21, 0.24);
 
   --header-h: 84px;
 }
@@ -61,8 +61,8 @@ a { color: var(--indigo); text-decoration: none; }
 h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 600;
-  line-height: 1.04;
-  letter-spacing: -0.01em;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
   margin: 0 0 0.55em;
   text-wrap: balance;
 }
@@ -110,7 +110,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--indigo);
   margin: 0 0 1.4rem;
 }
-.eyebrow svg { width: 16px; height: 13px; flex: none; color: var(--green); }
+.eyebrow svg { width: 22px; height: 11px; flex: none; color: var(--green); }
 
 .text-center { text-align: center; }
 .mt-2 { margin-top: 2rem; }
@@ -139,7 +139,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 .logo { display: inline-flex; align-items: center; }
-.logo img { height: 40px; width: auto; }
+.logo img { height: 26px; width: auto; }
+@media (max-width: 480px) { .logo img { height: 21px; } }
 
 .nav-links {
   display: flex;
@@ -282,11 +283,9 @@ p:last-child { margin-bottom: 0; }
   inset: -20% -10%;
   z-index: -2;
   background:
-    radial-gradient(42% 44% at 82% 18%, color-mix(in srgb, var(--indigo) 16%, transparent), transparent 70%),
-    radial-gradient(36% 40% at 12% 78%, color-mix(in srgb, var(--green) 22%, transparent), transparent 72%),
-    radial-gradient(30% 34% at 68% 88%, color-mix(in srgb, var(--amber) 14%, transparent), transparent 75%),
+    radial-gradient(46% 52% at 84% 12%, color-mix(in srgb, var(--indigo) 10%, transparent), transparent 70%),
+    radial-gradient(30% 36% at 6% 90%, color-mix(in srgb, var(--green) 10%, transparent), transparent 72%),
     var(--paper);
-  filter: saturate(1.05);
 }
 
 .hero-flower {
@@ -298,8 +297,8 @@ p:last-child { margin-bottom: 0; }
 }
 .hero-flower svg { width: 100%; height: auto; }
 .hero-flower--a { top: 16%; right: 7%; width: clamp(110px, 14vw, 230px); }
-.hero-flower--b { bottom: 14%; right: 26%; width: clamp(54px, 6vw, 100px); color: var(--amber); }
-.hero-flower--c { top: 56%; left: -3%; width: clamp(80px, 10vw, 170px); color: var(--indigo); opacity: 0.16; }
+.hero-flower--b { bottom: 14%; right: 26%; width: clamp(54px, 6vw, 100px); color: var(--indigo); opacity: 0.9; }
+.hero-flower--c { top: 56%; left: -3%; width: clamp(80px, 10vw, 170px); color: var(--indigo); opacity: 0.1; }
 
 .hero-inner { padding-block: clamp(3rem, 6vw, 5rem); }
 
@@ -369,7 +368,12 @@ p:last-child { margin-bottom: 0; }
   overflow: clip;
   will-change: transform;
 }
-.panel--ink { background: var(--indigo-dark); color: var(--white); }
+.panel--ink {
+  background-color: var(--indigo-dark);
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22-30%20-30%20296%20178%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%233B2CFF%22%20stroke-width%3D%225%22%20stroke-linejoin%3D%22round%22%20stroke-opacity%3D%220.38%22%20d%3D%22M231.69%2048.13C235.78%2038.16%20223.20%2031.84%20203.57%2033.97C203.57%2033.97%20203.33%2033.99%20202.84%2034.05C200.53%2034.32%20198.22%2034.69%20195.95%2035.18C192.86%2035.77%20180.94%2039.24%20168.26%2043.03C159.95%2045.51%20155.15%2041.52%20161.89%2037.76C172.21%2032.00%20181.74%2026.57%20183.72%2025.07C185.22%2023.97%20186.60%2022.82%20187.81%2021.63C188.07%2021.39%20188.18%2021.26%20188.18%2021.26C198.15%2011.13%20192.11%202.08%20174.72%201.04C157.31%200.00%20135.13%207.37%20125.16%2017.51C125.16%2017.51%20125.03%2017.64%20124.81%2017.89C123.67%2019.07%20122.78%2020.26%20122.07%2021.39C121.01%2022.97%20119.41%2028.87%20117.90%2035.14C116.91%2039.24%20105.24%2042.25%20102.46%2039.11C98.24%2034.31%2094.08%2029.89%2092.43%2029.02C91.29%2028.35%2089.95%2027.74%2088.40%2027.24C88.09%2027.13%2087.92%2027.09%2087.92%2027.09C74.45%2022.97%2051.47%2027.18%2036.63%2036.49C21.77%2045.81%2020.65%2056.70%2034.12%2060.82C34.12%2060.82%2034.28%2060.87%2034.62%2060.97C36.24%2061.43%2037.97%2061.78%2039.82%2062.01C42.26%2062.38%2053.19%2062.56%2064.94%2062.65C72.63%2062.71%2070.23%2068.54%2061.77%2070.37C48.85%2073.16%2036.74%2075.85%2033.73%2076.83C31.51%2077.52%2029.29%2078.30%2027.13%2079.17C26.69%2079.35%2026.46%2079.45%2026.46%2079.45C8.18%2087.03%200.00%2098.69%208.23%20105.49C16.46%20112.29%2037.95%20111.65%2056.24%20104.07C56.24%20104.07%2056.46%20103.97%2056.91%20103.79C59.03%20102.88%2061.03%20101.91%2062.85%20100.91C65.42%2099.58%2073.78%2093.79%2082.56%2087.57C88.29%2083.51%2098.50%2084.10%2096.04%2088.37C92.28%2094.88%2088.94%20100.99%2088.76%20102.45C88.53%20103.55%2088.50%20104.62%2088.72%20105.68C88.76%20105.90%2088.79%20106.00%2088.79%20106.00C90.95%20114.81%20108.89%20117.80%20128.81%20112.67C148.76%20107.55%20163.16%2096.27%20161.00%2087.46C161.00%2087.46%20160.98%2087.35%20160.90%2087.15C160.60%2086.12%20160.08%2085.18%20159.37%2084.33C158.52%2083.12%20152.76%2079.35%20146.43%2075.42C142.30%2072.84%20150.99%2067.39%20157.94%2068.20C168.54%2069.45%20178.59%2070.52%20181.48%2070.47C183.57%2070.47%20185.74%2070.35%20188.05%2070.13C188.52%2070.09%20188.76%2070.06%20188.76%2070.06C208.39%2067.91%20227.63%2058.11%20231.72%2048.15L231.69%2048.13Z%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 260px auto;
+  color: var(--white);
+}
 .panel--indigo {
   background:
     radial-gradient(80% 120% at 85% -10%, #6d78e6, transparent 60%),
@@ -468,9 +472,9 @@ p:last-child { margin-bottom: 0; }
   display: grid;
   place-items: center;
 }
-.stack-visual--indigo { background: radial-gradient(90% 130% at 20% 0%, #6d78e6, var(--indigo) 60%); }
-.stack-visual--green { background: radial-gradient(90% 130% at 20% 0%, #b3ec97, var(--green) 60%); }
-.stack-visual--amber { background: radial-gradient(90% 130% at 20% 0%, #f8cd97, var(--amber) 60%); }
+.stack-visual--indigo { background: radial-gradient(90% 130% at 20% 0%, #5a4dff, var(--indigo) 60%); }
+.stack-visual--green { background: radial-gradient(90% 130% at 20% 0%, #8ceb93, var(--green) 60%); }
+.stack-visual--amber { background: radial-gradient(90% 130% at 20% 0%, #23233a, var(--indigo-dark) 60%); }
 .stack-visual .sv-flower { width: 34%; color: var(--white); opacity: 0.92; }
 .stack-visual .sv-img {
   position: absolute;
@@ -531,8 +535,8 @@ p:last-child { margin-bottom: 0; }
 }
 .rail-card:hover .rail-media img { transform: scale(1.06) rotate(-1.5deg); }
 .rail-media--mint { background: var(--mint); }
-.rail-media--peach { background: #fdeee0; }
-.rail-media--rose { background: #fdeceb; }
+.rail-media--peach { background: #f0f1f5; }
+.rail-media--rose { background: var(--lilac); }
 .rail-media--ink { background: var(--indigo-dark); }
 .rail-card .brand-tag {
   align-self: flex-start;
@@ -573,7 +577,7 @@ p:last-child { margin-bottom: 0; }
   display: grid;
   place-items: center;
   background:
-    radial-gradient(70% 100% at 80% 0%, #6d78e6, transparent 55%),
+    radial-gradient(70% 100% at 80% 0%, #5a4dff, transparent 55%),
     var(--indigo);
   color: var(--white);
 }
@@ -628,9 +632,9 @@ p:last-child { margin-bottom: 0; }
   place-items: center;
   will-change: transform;
 }
-.split-visual--indigo { background: radial-gradient(90% 130% at 15% 0%, #6d78e6, var(--indigo) 62%); }
-.split-visual--green { background: radial-gradient(90% 130% at 15% 0%, #b3ec97, var(--green) 62%); }
-.split-visual--warm { background: radial-gradient(90% 130% at 15% 0%, #f8cd97, var(--amber) 62%); }
+.split-visual--indigo { background: radial-gradient(90% 130% at 15% 0%, #5a4dff, var(--indigo) 62%); }
+.split-visual--green { background: radial-gradient(90% 130% at 15% 0%, #8ceb93, var(--green) 62%); }
+.split-visual--warm { background: radial-gradient(90% 130% at 15% 0%, #23233a, var(--indigo-dark) 62%); }
 .split-visual .visual-flower { width: 36%; color: var(--white); }
 .split-visual .visual-img {
   position: absolute;
@@ -673,7 +677,7 @@ p:last-child { margin-bottom: 0; }
   font-size: clamp(2rem, 4.6vw, 3.6rem);
   letter-spacing: -0.01em;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(87, 98, 213, 0.4);
+  -webkit-text-stroke: 1.5px rgba(59, 44, 255, 0.38);
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
@@ -755,8 +759,8 @@ a.card { color: inherit; }
 }
 .card-icon svg { width: 30px; height: 30px; }
 .card-icon--green { background: var(--mint); color: var(--green-deep); }
-.card-icon--coral { background: #fdecec; color: var(--coral); }
-.card-icon--amber { background: #fdf1e2; color: #cf8226; }
+.card-icon--coral { background: var(--lilac); color: var(--indigo-deep); }
+.card-icon--amber { background: #f0f1f5; color: #4a4d5c; }
 .card h3 { margin-bottom: 0.3rem; }
 .card p { color: var(--muted); font-size: 1rem; }
 .card-link {
@@ -784,7 +788,7 @@ a.card { color: inherit; }
   border: 1px solid var(--line);
   box-shadow: var(--shadow-card);
 }
-.value .value-flower { width: 40px; height: 33px; margin-bottom: 1rem; }
+.value .value-flower { width: 46px; height: 23px; margin-bottom: 1rem; }
 .value h3 { font-size: 1.25rem; margin-bottom: 0.35rem; }
 .value p { color: var(--muted); font-size: 0.98rem; }
 
@@ -827,8 +831,8 @@ a.card { color: inherit; }
 }
 .brand-card:hover .brand-media img { transform: scale(1.07) rotate(-1.5deg); }
 .brand-media--mint { background: var(--mint); }
-.brand-media--peach { background: #fdeee0; }
-.brand-media--rose { background: #fdeceb; }
+.brand-media--peach { background: #f0f1f5; }
+.brand-media--rose { background: var(--lilac); }
 .brand-media--ink { background: var(--indigo-dark); }
 .brand-body { padding: 1.75rem; display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
 .brand-card .brand-tag {
@@ -844,9 +848,9 @@ a.card { color: inherit; }
   margin-bottom: 0.5rem;
   font-family: var(--font-display);
 }
-.brand-tag--green { color: #3c7d17 !important; background: var(--mint) !important; }
-.brand-tag--coral { color: #b02c29 !important; background: #fdecec !important; }
-.brand-tag--amber { color: #a35f13 !important; background: #fdf1e2 !important; }
+.brand-tag--green { color: #187a3c !important; background: var(--mint) !important; }
+.brand-tag--coral { color: var(--indigo-deep) !important; background: var(--lilac) !important; }
+.brand-tag--amber { color: #4a4d5c !important; background: #f0f1f5 !important; }
 .brand-card .brand-name { font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; }
 .brand-card p { color: var(--muted); font-size: 0.98rem; margin: 0; }
 .brand-card .brand-ext {
@@ -863,7 +867,7 @@ a.card { color: inherit; }
   position: relative;
   border-radius: var(--radius-l);
   background:
-    radial-gradient(80% 120% at 85% -10%, #6d78e6, transparent 60%),
+    radial-gradient(80% 120% at 85% -10%, #5a4dff, transparent 60%),
     var(--indigo);
   color: var(--white);
   padding: clamp(3rem, 8vw, 6rem);
@@ -967,7 +971,9 @@ a.card { color: inherit; }
 
 /* ---------- footer ---------- */
 .site-footer {
-  background: var(--indigo-dark);
+  background-color: var(--indigo-dark);
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22-30%20-30%20296%20178%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%233B2CFF%22%20stroke-width%3D%225%22%20stroke-linejoin%3D%22round%22%20stroke-opacity%3D%220.38%22%20d%3D%22M231.69%2048.13C235.78%2038.16%20223.20%2031.84%20203.57%2033.97C203.57%2033.97%20203.33%2033.99%20202.84%2034.05C200.53%2034.32%20198.22%2034.69%20195.95%2035.18C192.86%2035.77%20180.94%2039.24%20168.26%2043.03C159.95%2045.51%20155.15%2041.52%20161.89%2037.76C172.21%2032.00%20181.74%2026.57%20183.72%2025.07C185.22%2023.97%20186.60%2022.82%20187.81%2021.63C188.07%2021.39%20188.18%2021.26%20188.18%2021.26C198.15%2011.13%20192.11%202.08%20174.72%201.04C157.31%200.00%20135.13%207.37%20125.16%2017.51C125.16%2017.51%20125.03%2017.64%20124.81%2017.89C123.67%2019.07%20122.78%2020.26%20122.07%2021.39C121.01%2022.97%20119.41%2028.87%20117.90%2035.14C116.91%2039.24%20105.24%2042.25%20102.46%2039.11C98.24%2034.31%2094.08%2029.89%2092.43%2029.02C91.29%2028.35%2089.95%2027.74%2088.40%2027.24C88.09%2027.13%2087.92%2027.09%2087.92%2027.09C74.45%2022.97%2051.47%2027.18%2036.63%2036.49C21.77%2045.81%2020.65%2056.70%2034.12%2060.82C34.12%2060.82%2034.28%2060.87%2034.62%2060.97C36.24%2061.43%2037.97%2061.78%2039.82%2062.01C42.26%2062.38%2053.19%2062.56%2064.94%2062.65C72.63%2062.71%2070.23%2068.54%2061.77%2070.37C48.85%2073.16%2036.74%2075.85%2033.73%2076.83C31.51%2077.52%2029.29%2078.30%2027.13%2079.17C26.69%2079.35%2026.46%2079.45%2026.46%2079.45C8.18%2087.03%200.00%2098.69%208.23%20105.49C16.46%20112.29%2037.95%20111.65%2056.24%20104.07C56.24%20104.07%2056.46%20103.97%2056.91%20103.79C59.03%20102.88%2061.03%20101.91%2062.85%20100.91C65.42%2099.58%2073.78%2093.79%2082.56%2087.57C88.29%2083.51%2098.50%2084.10%2096.04%2088.37C92.28%2094.88%2088.94%20100.99%2088.76%20102.45C88.53%20103.55%2088.50%20104.62%2088.72%20105.68C88.76%20105.90%2088.79%20106.00%2088.79%20106.00C90.95%20114.81%20108.89%20117.80%20128.81%20112.67C148.76%20107.55%20163.16%2096.27%20161.00%2087.46C161.00%2087.46%20160.98%2087.35%20160.90%2087.15C160.60%2086.12%20160.08%2085.18%20159.37%2084.33C158.52%2083.12%20152.76%2079.35%20146.43%2075.42C142.30%2072.84%20150.99%2067.39%20157.94%2068.20C168.54%2069.45%20178.59%2070.52%20181.48%2070.47C183.57%2070.47%20185.74%2070.35%20188.05%2070.13C188.52%2070.09%20188.76%2070.06%20188.76%2070.06C208.39%2067.91%20227.63%2058.11%20231.72%2048.15L231.69%2048.13Z%22%2F%3E%3C%2Fsvg%3E");
+  background-size: 300px auto;
   color: rgba(255, 255, 255, 0.75);
   margin-top: clamp(5rem, 10vw, 8rem);
   padding-top: clamp(4rem, 8vw, 6.5rem);
