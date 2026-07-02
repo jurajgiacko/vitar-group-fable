@@ -62,6 +62,7 @@ Obsah vychází z projektové dokumentace `vitar-eshop-digitalizace` (KNOWLEDGE_
 - [ ] **Certifikace** — na webu záměrně obecně („systém řízení kvality, HACCP, správná výrobní praxe"). Konkrétní certifikáty (ISO/IFS…) doplnit po dodání skenů/čísel.
 - [ ] **Milníky na o-nas.html** — dekády jsou přibližné, přesná data doplnit z firemní kroniky.
 - [ ] **Formy výroby** (gummies, stick packy…) — potvrdit skutečné technologické portfolio.
+- [ ] **Fotografie interiérů** (`assets/photos/` — výroba, laboratoř, kancelář) jsou **AI-modernizované verze** reálných fotek z vitar.cz (Gemini 2.5 Flash Image; stejná scéna a kompozice, vyčištěný interiér a světlo — viz `note` v manifestu). Před spuštěním nahradit skutečným fotoshootem, nebo nechat schválit brandem. Budova Zlín a letecký Tišnov jsou originály.
 - [ ] **GDPR/cookies** — web nemá žádné trackery ani cookies; při nasazení analytiky doplnit lištu + privacy stránku.
 - [ ] **EN verze** (vitar.eu → vitar.group/en) — připraveno strukturou, obsah zatím jen CZ.
 
