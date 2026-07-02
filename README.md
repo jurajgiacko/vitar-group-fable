@@ -10,6 +10,10 @@ Statický korporátní web **VITAR Group** (vitar.group / vitar-group.cz). „St
 
 **Konkurenční prehľad:** `docs/KONKURENCNY-PREHLAD.md` — 10 benchmark profilů (Lonza, Catalent, Sirio, Queisser/Doppelherz, dsm-firmenich, Haleon, Kofola, Prazdroj, ŠKODA kariéra, Gelita), syntéza vzorů a motion playbook.
 
+**RFQ kvalifikační modal** (`js/rfq.js`, vzor Sirio Pharma): každé CTA „Poptat výrobu" otevírá čtyřkrokový průvodce — typ spolupráce → formy produktu → objem a trh → kontakt. Výstupem je strukturovaný předvyplněný e-mail (mailto, bez backendu). Dvojjazyčný (čte `<html lang>`), klávesnice + Esc, fallback = klasický formulář na `vyroba.html#poptavka` (funguje i bez JS, protože trigger je odkaz na kotvu).
+
+**EN mutace:** `en/` — zrcadlové stránky v angličtině (stejné slugy pro 1:1 mapování), hreflang v hlavičkách, přepínač CZ/EN v navigaci. Cíl dle doménové strategie: vitar.eu → vitar.group/en.
+
 ## Struktura
 
 | Soubor | Obsah |
