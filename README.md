@@ -4,6 +4,8 @@ Statický korporátní web **VITAR Group** (vitar.group / vitar-group.cz). „St
 
 **Vizuál:** Bloomfield Brand Studio rebrand, **varianta 1A / v1 (korporátní)** — dle rozhodnutí týmu. Elektrická modrá `#3B2CFF` + zelený pětilístek `#64DD6C`, černé panely s outline vzorem pětilístku, ostřejší typografie. **Logo lockupy i pětilístek jsou skutečné vektory extrahované z brand decku** (`assets/logo.svg` horizontální, `assets/logo-stacked.svg`, `assets/flower.svg`).
 
+**Design pass (frontend-design skill):** hero = teze z VITARova světa — šumivá tableta rozpuštěná ve sklenici, maskovaná do tvaru pětilístku (signature element webu). Pod hero „šarže" linka v IBM Plex Mono (`// Zlín, CZ // zal. 1990 // … // každá šarže s CoA`) — odkaz na dohledatelnost šarží jako trust story. Role karty nesou data místo dekorativního číslování. Marquee odstraněno.
+
 **Motion:** GSAP 3 + ScrollTrigger + Lenis (vendorováno v `js/vendor/`, žádný build step). Pinned hero se split-text revealem, scrub statement, stacked role cards, pinned horizontální brand rail, flower-mask reveal, scroll-reactive marquee, magnetic buttons, hide-on-scroll header. Vše s `prefers-reduced-motion` fallbackem.
 
 **Brand assety:** `assets/brands/` obsahuje reálná loga a packshoty značek stažené z vitar.cz a nasevitaminy.cz (viz `assets/brands/manifest.json` se zdrojovými URL). Enervit a Royal Bay záměrně vynechány.

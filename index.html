@@ -14,8 +14,8 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap&subset=latin-ext" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#main">Přeskočit na obsah</a>
@@ -47,16 +47,29 @@
     <!-- HERO -->
     <section class="hero">
       <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-flower hero-flower--a" aria-hidden="true"><svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></div>
-      <div class="hero-flower hero-flower--b" aria-hidden="true"><svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></div>
-      <div class="hero-flower hero-flower--c" aria-hidden="true"><svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></div>
       <div class="container hero-inner">
-        <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Česká rodinná skupina · od roku 1990</p>
-        <h1 class="display-1" data-split>Pomáháme lidem vést <span class="accent">zdravější život.</span></h1>
-        <p class="lead">Vývoj, výroba a značky vitamínů a doplňků stravy pod jednou střechou. Ze Zlína pro celou Evropu.</p>
-        <div class="hero-actions">
-          <a class="btn" href="znacky.html">Naše značky <span class="arrow">→</span></a>
-          <a class="btn btn--ghost" href="vyroba.html">Výroba pro partnery</a>
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow"><svg aria-hidden="true"><use href="assets/sprite.svg#flower"/></svg>Česká rodinná skupina · od roku 1990</p>
+            <h1 class="display-1" data-split>Pomáháme lidem vést <span class="accent">zdravější život.</span></h1>
+            <p class="lead">Vývoj, výroba a značky vitamínů a doplňků stravy pod jednou střechou. Ze Zlína pro celou Evropu.</p>
+            <div class="hero-actions">
+              <a class="btn" href="znacky.html">Naše značky <span class="arrow">→</span></a>
+              <a class="btn btn--ghost" href="vyroba.html">Výroba pro partnery</a>
+            </div>
+          </div>
+          <div class="hero-visual" data-parallax="0.06" role="img" aria-label="Šumivá tableta rozpouštějící se ve sklenici vody, v obrysu pětilístku">
+            <img src="assets/photos/fizz-hero.jpg" alt="" fetchpriority="high">
+          </div>
+        </div>
+        <div class="batch-line" aria-label="Fakta o skupině">
+          <ul>
+            <li>Zlín, CZ</li>
+            <li>zal. 1990</li>
+            <li>16 značek</li>
+            <li>~40 trhů</li>
+            <li>každá šarže s CoA</li>
+          </ul>
         </div>
       </div>
       <p class="hero-scroll" aria-hidden="true">scrolluj</p>
@@ -112,7 +125,7 @@
         <div class="stack">
           <article class="stack-card">
             <div>
-              <span class="card-index">01 · Brand house</span>
+              <span class="card-index">Brand house <em>· 16 značek</em></span>
               <h3>Značky pro každý den i vrcholný výkon</h3>
               <p>Rodina značek od vitamínů MaxiVita přes prémiové řady VITAR až po sportovní výživu. Každá má vlastní tvář, všechny spojuje jedna kvalita.</p>
               <a class="card-link" href="znacky.html">Prozkoumat značky <span class="arrow">→</span></a>
@@ -127,7 +140,7 @@
           </article>
           <article class="stack-card">
             <div>
-              <span class="card-index">02 · Výrobce a partner</span>
+              <span class="card-index">Výroba <em>· 27 mil. ks ročně</em></span>
               <h3>Vyrábíme. I pod vaší značkou.</h3>
               <p>Vlastní vývoj, výroba a laboratoř s kapacitou 27 milionů kusů ročně. Private label a zakázková výroba pro partnery v celé Evropě.</p>
               <a class="card-link" href="vyroba.html">Výroba a vývoj <span class="arrow">→</span></a>
@@ -138,7 +151,7 @@
           </article>
           <article class="stack-card">
             <div>
-              <span class="card-index">03 · Zaměstnavatel</span>
+              <span class="card-index">Lidé <em>· ~250 kolegů</em></span>
               <h3>Rodinná firma, evropské ambice</h3>
               <p>~250 kolegyň a kolegů ve výrobě, laboratoři, vývoji, obchodu i digitálu. Ve Zlíně se známe jménem, ne číslem zaměstnance.</p>
               <a class="card-link" href="kariera.html">Kariéra u nás <span class="arrow">→</span></a>
@@ -257,24 +270,6 @@
       </div>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span class="marquee-item">MaxiVita <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">VITAR <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">Energit <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">Capri-Sonne <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">Vyproštovák <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">Revitalon <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">MaxiVita <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">VITAR <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">Energit <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">Capri-Sonne <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">Vyproštovák <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-        <span class="marquee-item">Revitalon <svg viewBox="0 0 236 118"><use href="assets/sprite.svg#flower"/></svg></span>
-      </div>
-    </div>
-
     <!-- CTA -->
     <section class="section--tight">
       <div class="container">
@@ -342,7 +337,7 @@
   <script src="js/vendor/gsap.min.js"></script>
   <script src="js/vendor/ScrollTrigger.min.js"></script>
   <script src="js/vendor/lenis.min.js"></script>
-  <script src="js/rfq.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/rfq.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>
