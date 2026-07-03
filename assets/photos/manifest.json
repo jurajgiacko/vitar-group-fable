@@ -54,11 +54,6 @@
     "source_url": null,
     "note": "Fully AI-generated (Gemini 2.5 Flash Image) — modern GMP facility look; the vitar.cz originals looked dated even after retouching. Approve or replace with a real photoshoot before launch."
   },
-  "kancelar-tym-v3.jpg": {
-    "subject": "Lidé při práci — kancelář vývojového/kvalitářského týmu",
-    "source_url": null,
-    "note": "Fully AI-generated (Gemini 2.5 Flash Image) — modern GMP facility look; the vitar.cz originals looked dated even after retouching. Approve or replace with a real photoshoot before launch."
-  },
   "laborator-kontrola-kvality-v3.jpg": {
     "subject": "Laboratoř / kontrola kvality — laborantka při práci, analytické váhy, vzorky produktů",
     "source_url": null,
@@ -71,6 +66,11 @@
   },
   "vyroba-operatorka-linky-v3.jpg": {
     "subject": "Lidé při práci — operátorky výrobní linky (hygienický oděv, čepice, roušky)",
+    "source_url": null,
+    "note": "Fully AI-generated (Gemini 2.5 Flash Image) — modern GMP facility look; the vitar.cz originals looked dated even after retouching. Approve or replace with a real photoshoot before launch."
+  },
+  "kancelar-tym-v4.jpg": {
+    "subject": "Lidé při práci — kancelář vývojového/kvalitářského týmu",
     "source_url": null,
     "note": "Fully AI-generated (Gemini 2.5 Flash Image) — modern GMP facility look; the vitar.cz originals looked dated even after retouching. Approve or replace with a real photoshoot before launch."
   }
