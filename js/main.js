@@ -129,7 +129,8 @@
   /* ---------- hero entrance + parallax ---------- */
   var hero = qs(".hero") || qs(".page-hero");
   if (hero) {
-    gsap.to(qsa(".hero-flower", hero), {
+    var heroFlowers = qsa(".hero-flower", hero);
+    if (heroFlowers.length) gsap.to(heroFlowers, {
       y: function (i) { return (i + 1) * -90; },
       rotate: function (i) { return i % 2 ? -14 : 12; },
       ease: "none",
@@ -138,7 +139,8 @@
     var lead = qs(".hero .lead, .page-hero .lead");
     var actions = qs(".hero-actions", hero);
     var eyebrow = qs(".eyebrow", hero);
-    gsap.from([eyebrow, lead, actions].filter(Boolean), {
+    var entrance = [eyebrow, lead, actions].filter(Boolean);
+    if (entrance.length) gsap.from(entrance, {
       opacity: 0,
       y: 26,
       duration: 1,
