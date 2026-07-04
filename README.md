@@ -25,7 +25,9 @@ Statický korporátní web **VITAR Group** (vitar.group / vitar-group.cz). „St
 | `znacky.html` | Brand house — portfolio značek + „kde nakoupit" rozcestník na e-shopy |
 | `vyroba.html` | B2B/OEM — vývoj na míru, private label, zakázková výroba, kvalita, RFQ formulář |
 | `kariera.html` | Employer branding — týmy, proč k nám, CTA na pozice |
-| `kontakt.html` | Kontakty a rozcestník |
+| `kontakt.html` | Kontakty a rozcestník (IČ 00566632) |
+| `kvalita.html` | ISO 22000, FSSC 22000, Charta kvality ČR, kontrola doplňků stravy |
+| `eticky-kodex.html`, `whistleblowing.html` | Compliance (zák. 171/2023 Sb., pověřená osoba, kanály oznámení) |
 | `css/styles.css` | Design systém (tokeny, komponenty) |
 | `js/main.js` | Motion engine (GSAP ScrollTrigger + Lenis) |
 | `js/vendor/` | gsap.min.js, ScrollTrigger.min.js, lenis.min.js |
@@ -59,11 +61,11 @@ Obsah vychází z projektové dokumentace `vitar-eshop-digitalizace` (KNOWLEDGE_
 
 - [ ] **E-mail** `vitar@vitar.cz` — použit jako jediný kontaktní kanál (formuláře, kariéra, média). Potvrdit / nahradit oficiálními adresami.
 - [ ] **Adresa** „třída Tomáše Bati 385, 763 02 Zlín" — převzata z brand decku (mockup polepu vozu). Ověřit proti OR.
-- [ ] **IČO/DIČ** — záměrně neuvedeno, doplnit do patičky po ověření.
+- [x] **IČ** — 00566632 (z vitar.cz) doplněno na kontakt. DIČ doplnit.
 - [ ] **Čísla skupiny:** ~250 lidí, 27 mil. ks kapacita, ~40 exportních trhů (odhad), 16 značek, tržní podíl neuváděn. Ověřit s Tomášem/Karlem.
-- [ ] **Certifikace** — na webu záměrně obecně („systém řízení kvality, HACCP, správná výrobní praxe"). Konkrétní certifikáty (ISO/IFS…) doplnit po dodání skenů/čísel.
+- [x] **Certifikace** — doplněno z vitar.cz: ISO 22000, FSSC 22000, Charta kvality ČR (stránka kvalita.html). Pozor: certifikátové PDF na vitar.cz jsou z r. 2023 — ověřit platnost/recertifikaci.
 - [ ] **Milníky na o-nas.html** — dekády jsou přibližné, přesná data doplnit z firemní kroniky.
-- [ ] **Formy výroby** (gummies, stick packy…) — potvrdit skutečné technologické portfolio.
+- [x] **Formy výroby** — sladěno s vitar.cz/vyroba-a-vyvoj: šumivé tablety, tablety, kapsle, sypké směsi, sirupy, pitíčka; balení tuby/blistry/krabičky/dózy/sáčky/stick packy. Gummies odstraněny — vitar.cz je neuvádí.
 - [ ] **Fotografie interiérů** (`assets/photos/` — výroba, laboratoř, kancelář) jsou **AI-modernizované verze** reálných fotek z vitar.cz (Gemini 2.5 Flash Image; stejná scéna a kompozice, vyčištěný interiér a světlo — viz `note` v manifestu). Před spuštěním nahradit skutečným fotoshootem, nebo nechat schválit brandem. Budova Zlín a letecký Tišnov jsou originály. `sklad-expedice.jpg` a `rodina-lifestyle.jpg` jsou **plně AI-generované** (reálná předloha neexistovala). Soubory na webu mají suffix `-v2` kvůli cache-bustingu (assets mají rok immutable cache).
 - [ ] **GDPR/cookies** — web nemá žádné trackery ani cookies; při nasazení analytiky doplnit lištu + privacy stránku.
 - [ ] **EN verze** (vitar.eu → vitar.group/en) — připraveno strukturou, obsah zatím jen CZ.
